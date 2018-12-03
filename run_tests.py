@@ -7,7 +7,7 @@ if __name__ == "__main__":
   
   if len(sys.argv) < 3:
     print("Usage: run_tests.py day.part test1 [test2...]")
-    print("Ex: run_tests.py day1.part2 ./day1/p1test3.txt")
+    print("Ex: run_tests.py day1.part2 ./day1/p2test1.txt ./day1/p2test2.txt")
     exit(1)
 
   # import module to test
