@@ -8,7 +8,7 @@ https://adventofcode.com/2018/day/1
 """
 
 
-def calculate_final_freqnecy(frequency_strings_list):
+def calculate_final_frequency(frequency_strings_list):
   frequency_deltas = [ int(x) for x in frequency_strings_list ]
 
   #initial frequency = 0
@@ -27,7 +27,7 @@ def test(case):
   #tests input is single line, comma separated. Convert to list
   test_strings = case.split(",")
 
-  return calculate_final_freqnecy(test_strings);
+  return calculate_final_frequency(test_strings);
 
 
 
@@ -43,4 +43,4 @@ if __name__ == '__main__':
   file = open(input_file_path, "r")
   lines = [line.rstrip('\n') for line in file]
 
-  print(calculate_final_freqnecy(lines))
+  print(calculate_final_frequency(lines))
